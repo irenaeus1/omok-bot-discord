@@ -16,7 +16,8 @@ async def on_ready():
 @client.event
 async def on_message(message):
     if message.content.startswith('!test'):
-        await message.channel.send('test!!!!')
+        s=input()
+        await message.channel.send(s)
  
     # elif message.content.startswith('!say'):
     #     await message.channel.send(message.channel, 'leave message')
